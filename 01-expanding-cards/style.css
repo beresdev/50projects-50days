@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster Two', cursive;
+}
+
+.img-container {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 0 auto;
+}
+
+.img-container .card {
+    width: calc(100% / 5);
+    height: 80vh;
+    border-radius: 20px;;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-container .one {
+    background-image: url('https://images.pexels.com/photos/797793/pexels-photo-797793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+}
+
+.img-container .two {
+    background-image: url('https://images.pexels.com/photos/3578393/pexels-photo-3578393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+}
+
+.img-container .three {
+    background-image: url('https://images.pexels.com/photos/4599906/pexels-photo-4599906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.img-container .four {
+    background-image: url('https://images.pexels.com/photos/1382393/pexels-photo-1382393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.img-container .five {
+    background-image: url('https://images.pexels.com/photos/305827/pexels-photo-305827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.img-container .card:hover {
+    cursor: pointer;
+}
+
+.img-container .active {
+    width: 600px;
+    transition: all 1s ease-in;
+}
+
+.img-container .card p {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 100px;
+    padding-left: 20px;
+    opacity: 0;
+}
+
+.img-container .active p {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .img-container .card p {
+        font-size: 14px
+    }
+}
