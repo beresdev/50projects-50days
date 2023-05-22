@@ -47,16 +47,14 @@
 }
 
 .img-container .active {
-    width: 600px;
+    width: 80vw;
     transition: all 1s ease-in;
 }
 
 .img-container .card p {
     font-size: 20px;
     color: white;
-    position: absolute;
-    top: 100px;
-    padding-left: 20px;
+    padding: 20px;
     opacity: 0;
 }
 
